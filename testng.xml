@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="1">
+    <test name="chromeTest">
+        <parameter name="browser" value="chrome"/>
+        <!-- Storing the Application Url -->
+        <parameter name="url" value="https://www.ebay.com/"/>
+        <classes>
+
+            <class name="org.example.Main">
+            </class>
+
+            <class name="org.example.SelectMobilePhone">
+                <methods>
+                    <include name="getUrl"/>
+                    <include name="verifyUrl"/>
+                    <include name="selectCategory"/>
+                    <include name="searchMobilePhone"/>
+                    <include name="selectApplePhone"/>
+                    <include name="selectFirstElement"/>
+                </methods>
+            </class>
+
+            <class name="org.example.InformationMobilePhone">
+                <methods>
+                    <include name="selectModelPhone"/>
+                    <include name="selectCarrier"/>
+                    <include name="selectStorageCapacity"/>
+                    <include name="selectColor"/>
+                    <include name="selectCosmetic"/>
+                    <include name="getItemName"/>
+                    <include name="getItemPrice"/>
+                    <include name="getItemCondition"/>
+                    <include name="getItemQuantity"/>
+                    <include name="addToCart"/>
+                    <include name="checkItemName"/>
+                    <include name="checkItemPrice"/>
+                    <include name="checkItemQuantity"/>
+                    <include name="getShippingValue"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="firefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <!-- Storing the Application Url -->
+        <parameter name="url" value="https://www.ebay.com/"/>
+        <classes>
+
+            <class name="org.example.Main">
+            </class>
+
+            <class name="org.example.SelectMobilePhone">
+                <methods>
+                    <include name="getUrl"/>
+                    <include name="verifyUrl"/>
+                    <include name="selectCategory"/>
+                    <include name="searchMobilePhone"/>
+                    <include name="selectApplePhone"/>
+                    <include name="selectFirstElement"/>
+                </methods>
+            </class>
+
+            <class name="org.example.InformationMobilePhone">
+                <methods>
+                    <include name="selectModelPhone"/>
+                    <include name="selectCarrier"/>
+                    <include name="selectStorageCapacity"/>
+                    <include name="selectColor"/>
+                    <include name="selectCosmetic"/>
+                    <include name="getItemName"/>
+                    <include name="getItemPrice"/>
+                    <include name="getItemCondition"/>
+                    <include name="getItemQuantity"/>
+                    <include name="addToCart"/>
+                    <include name="checkItemName"/>
+                    <include name="checkItemPrice"/>
+                    <include name="checkItemQuantity"/>
+                    <include name="getShippingValue"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="EdgeTest">
+        <parameter name="browser" value="Edge"/>
+        <!-- Storing the Application Url -->
+        <parameter name="url" value="https://www.ebay.com/"/>
+        <classes>
+
+            <class name="org.example.Main">
+            </class>
+
+            <class name="org.example.SelectMobilePhone">
+                <methods>
+                    <include name="getUrl"/>
+                    <include name="verifyUrl"/>
+                    <include name="selectCategory"/>
+                    <include name="searchMobilePhone"/>
+                    <include name="selectApplePhone"/>
+                    <include name="selectFirstElement"/>
+                </methods>
+            </class>
+
+            <class name="org.example.InformationMobilePhone">
+                <methods>
+                    <include name="selectModelPhone"/>
+                    <include name="selectCarrier"/>
+                    <include name="selectStorageCapacity"/>
+                    <include name="selectColor"/>
+                    <include name="selectCosmetic"/>
+                    <include name="getItemName"/>
+                    <include name="getItemPrice"/>
+                    <include name="getItemCondition"/>
+                    <include name="getItemQuantity"/>
+                    <include name="addToCart"/>
+                    <include name="checkItemName"/>
+                    <include name="checkItemPrice"/>
+                    <include name="checkItemQuantity"/>
+                    <include name="getShippingValue"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
